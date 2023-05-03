@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscripts.js"></script>
+    <title>DIRECTORY | DANAO KIOKS</title>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="pictures\CTU.png" class="seteyu" />
+      </section>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#news">ABOUT</a>
+        <a class="active" href="#directory">DIRECTORY</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <section class="building">
+          <canvas id="canvas3d"></canvas>
+          <script type="module">
+            import { Application } from "./runtime.js";
+            const canvas = document.getElementById("canvas3d");
+            const app = new Application(canvas);
+            app.load("./scene.splinecode");
+          </script>
+          <!-- <iframe
+              src="https://my.spline.design/untitled-4e135aa6ff0804835996bf348fdb72f9/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe> -->
+        </section>
+
+        <section class="details">
+          <div class="search">
+            <input type="text" value="" placeholder="SEARCH" id="searchBar" />
+          </div>
+          <div class="text">
+            <h2>THIS IS THE</h2>
+            <h1 class="office_name">INNOVATION HALLS</h1>
+            <p class="description">
+              The innovation halls are chuchuness yesyes i dont know make this
+              long
+            </p>
+            <p class="true_location">Located at 4th Floor CME Building.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="menu">
+        <div class="locs" id="active">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+        <div class="locs" id="loc">hello</div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

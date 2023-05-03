@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "GlacialBold";
+  src: url("fonts/GlacialIndifference-Bold.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Glacial";
+  src: url("fonts/GlacialIndifference-Regular.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GlacialItalic";
+  src: url("fonts/GlacialIndifference-Italic.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZuumeSemiBold";
+  src: url("fonts/Zuume-SemiBold.woff2") format("woff2"),
+    url("fonts/Zuume-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  background-color: #131313;
+  color: white;
+  font-family: Glacial;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  outline: 2px dashed black;
+  height: 6rem;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.logo {
+  width: 60rem;
+  height: 3rem;
+  outline: 2px dashed rgb(231, 255, 215);
+}
+
+.seteyu {
+  height: 4.3rem;
+  width: 4.3rem;
+  margin-top: -8px;
+  margin-left: 33px;
+}
+
+nav {
+  outline: 2px dashed rgb(152, 143, 48);
+  overflow: hidden;
+  height: 3rem;
+  display: flex;
+  width: 50rem;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+nav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  text-decoration: underline 0.3rem gray;
+  text-underline-position: under;
+  text-underline-offset: 0.2rem;
+}
+
+nav a.active {
+  color: white;
+  font-family: GlacialBold;
+  text-decoration: underline 0.3rem gold;
+  text-underline-position: under;
+  text-underline-offset: 0.2rem;
+}
+
+/* BODY */
+
+.content {
+  display: flex;
+  outline: 2px dashed green;
+  margin: auto;
+  height: 70vh;
+  width: 90vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* 3D JSON */
+
+.building {
+  outline: 2px dashed yellow;
+  width: 60%;
+  height: 68vh;
+}
+
+/* iframe {
+  height: 68vh;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  outline: 2px dashed purple;
+} */
+
+canvas#canvas3d {
+  outline: 2px dashed peru;
+}
+
+/* TEXT BESIDE BUILDING */
+
+.details {
+  outline: 2px dashed rgb(112, 39, 51);
+  width: 37%;
+  height: 100%;
+}
+
+input {
+  margin-top: 7rem;
+  color: white;
+  outline: 2px dashed pink;
+  background: none;
+  border-bottom: 0.5px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 24rem;
+  height: 2rem;
+  font-family: Glacial;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 0.5px solid white;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.text h2 {
+  letter-spacing: 1px;
+  outline: 2px dashed blue;
+  font-size: 1.8rem;
+  margin: 6rem 0rem 0rem 0rem;
+}
+
+.text h1.office_name {
+  font-family: ZuumeSemiBold;
+  letter-spacing: -2px;
+  font-size: 6rem;
+  color: gold;
+  outline: 2px dashed blue;
+  margin: 0.4rem 0rem 0rem 0rem;
+}
+
+.description {
+  outline: 2px dashed blue;
+  font-size: 1.6rem;
+}
+
+.true_location {
+  outline: 2px dashed blue;
+  font-family: GlacialItalic;
+  font-size: 1rem;
+}
+
+/* BOTTOM MENU */
+
+.menu {
+  display: flex;
+  outline: 2px dashed blue;
+  justify-content: space-evenly;
+  width: 95vw;
+  margin: auto;
+  align-items: center;
+  height: 9rem;
+}
+
+.locs {
+  width: 6rem;
+  height: 9rem;
+  outline: 2px dashed red;
+}
+
+.locs:hover {
+  outline: 2px dashed white;
+  cursor: pointer;
+}
+
+.locs#active {
+  width: 6rem;
+  height: 11rem;
+  outline: 2px dashed red;
+  cursor: auto;
+}
