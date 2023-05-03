@@ -39,36 +39,36 @@ body {
   background-color: #131313;
   color: white;
   font-family: Glacial;
+  overflow: hidden;
 }
 
 /* HEADER */
 
 header {
   display: flex;
-  outline: 2px dashed black;
+  /* outline: 2px dashed black; */
   height: 6rem;
   z-index: 1;
   justify-content: center;
   align-items: center;
   width: 80vw;
-  margin: auto;
+  margin: 2rem auto auto auto;
 }
 
 .logo {
-  width: 60rem;
+  width: 53.2rem;
   height: 3rem;
-  outline: 2px dashed rgb(231, 255, 215);
+  /* outline: 2px dashed rgb(231, 255, 215); */
 }
 
 .seteyu {
   height: 4.3rem;
-  width: 4.3rem;
   margin-top: -8px;
   margin-left: 33px;
 }
 
 nav {
-  outline: 2px dashed rgb(152, 143, 48);
+  /* outline: 2px dashed rgb(152, 143, 48); */
   overflow: hidden;
   height: 3rem;
   display: flex;
@@ -81,9 +81,8 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 nav a:hover {
@@ -95,7 +94,7 @@ nav a:hover {
 nav a.active {
   color: white;
   font-family: GlacialBold;
-  text-decoration: underline 0.3rem gold;
+  text-decoration: underline 0.3rem #ffcc32;
   text-underline-position: under;
   text-underline-offset: 0.2rem;
 }
@@ -104,7 +103,7 @@ nav a.active {
 
 .content {
   display: flex;
-  outline: 2px dashed green;
+  /* outline: 2px dashed green; */
   margin: auto;
   height: 70vh;
   width: 90vw;
@@ -115,29 +114,27 @@ nav a.active {
 /* 3D JSON */
 
 .building {
-  outline: 2px dashed yellow;
+  /* outline: 2px dashed yellow; */
   width: 60%;
   height: 68vh;
 }
 
-/* iframe {
-  height: 68vh;
-  width: 100%;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  position: relative;
-  outline: 2px dashed purple;
-} */
-
-canvas#canvas3d {
-  outline: 2px dashed peru;
+iframe {
+  height: 86vh;
+  width: 58vw;
+  position: absolute;
+  /* outline: 2px dashed purple; */
+  left: 0;
 }
+
+/* canvas#canvas3d {
+  outline: 2px dashed peru;
+} */
 
 /* TEXT BESIDE BUILDING */
 
 .details {
-  outline: 2px dashed rgb(112, 39, 51);
+  /* outline: 2px dashed rgb(112, 39, 51); */
   width: 37%;
   height: 100%;
 }
@@ -145,22 +142,21 @@ canvas#canvas3d {
 input {
   margin-top: 7rem;
   color: white;
-  outline: 2px dashed pink;
+  /* outline: 2px dashed pink; */
   background: none;
   border-bottom: 0.5px solid white;
   border-top: none;
   border-left: none;
   border-right: none;
-  width: 24rem;
+  width: 15rem;
   height: 2rem;
   font-family: Glacial;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 input:focus {
   outline: none;
-  border-bottom: 0.5px solid white;
   color: white;
 }
 
@@ -180,32 +176,38 @@ input:focus {
 
 :-ms-input-placeholder {
   color: white;
-  font-weight: bold;
 }
 
 .text h2 {
-  letter-spacing: 1px;
-  outline: 2px dashed blue;
-  font-size: 1.8rem;
-  margin: 6rem 0rem 0rem 0rem;
+  letter-spacing: 2px;
+  /* outline: 2px dashed blue; */
+  font-size: 1.5rem;
+  margin: 5rem 0rem 0rem 0rem;
+  font-weight: 100;
 }
 
 .text h1.office_name {
   font-family: ZuumeSemiBold;
-  letter-spacing: -2px;
-  font-size: 6rem;
-  color: gold;
-  outline: 2px dashed blue;
+  letter-spacing: -1.5px;
+  font-size: 6.5rem;
+  color: #ffcc32;
+  /* outline: 2px dashed blue; */
   margin: 0.4rem 0rem 0rem 0rem;
 }
 
+.descrip_box {
+  /* outline: 2px dashed gold; */
+  width: 80%;
+  z-index: 2;
+}
+
 .description {
-  outline: 2px dashed blue;
-  font-size: 1.6rem;
+  /* outline: 2px dashed blue; */
+  font-size: 1.4rem;
 }
 
 .true_location {
-  outline: 2px dashed blue;
+  /* outline: 2px dashed blue; */
   font-family: GlacialItalic;
   font-size: 1rem;
 }
@@ -214,7 +216,11 @@ input:focus {
 
 .menu {
   display: flex;
-  outline: 2px dashed blue;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* outline: 2px dashed blue; */
   justify-content: space-evenly;
   width: 95vw;
   margin: auto;
@@ -225,17 +231,32 @@ input:focus {
 .locs {
   width: 6rem;
   height: 9rem;
-  outline: 2px dashed red;
+  outline: solid 0px #ffffff;
+  transition: outline 0.1s ease-out;
+  text-align: center;
+  background-color: rgb(109, 109, 109);
+  display: flex;
+  justify-content: center;
 }
 
 .locs:hover {
-  outline: 2px dashed white;
+  outline: 2px solid white;
   cursor: pointer;
 }
 
 .locs#active {
   width: 6rem;
   height: 11rem;
-  outline: 2px dashed red;
+  outline: 2px solid #ffcc32;
   cursor: auto;
+}
+
+.locs p {
+  align-self: flex-end;
+}
+
+.admin {
+  background-image: url(pictures/sample.jpg);
+  background-size: cover;
+  align-items: center;
 }
