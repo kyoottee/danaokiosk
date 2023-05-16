@@ -91,7 +91,7 @@ nav a:hover {
   text-underline-offset: 0.2rem;
 }
 
-nav a.active {
+nav a#active {
   color: white;
   font-family: GlacialBold;
   text-decoration: underline 0.3rem #ffcc32;
@@ -232,11 +232,14 @@ input:focus {
   width: 6rem;
   height: 9rem;
   outline: solid 0px #ffffff;
-  transition: outline 0.1s ease-out;
+
   text-align: center;
   background-color: rgb(109, 109, 109);
   display: flex;
   justify-content: center;
+
+  transition-duration: 0.3s;
+  transition-property: height;
 }
 
 .locs:hover {
@@ -244,11 +247,15 @@ input:focus {
   cursor: pointer;
 }
 
-.locs#active {
+.active {
   width: 6rem;
   height: 11rem;
   outline: 2px solid #ffcc32;
-  cursor: auto;
+}
+
+.locs:hover.active {
+  cursor: default;
+  outline: 2px solid #ffcc32;
 }
 
 .locs p {
@@ -259,4 +266,9 @@ input:focus {
   background-image: url(pictures/sample.jpg);
   background-size: cover;
   align-items: center;
+  background-position: center;
+}
+
+#hold {
+  position: relative;
 }

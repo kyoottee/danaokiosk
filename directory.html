@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="pictures/fav.ico" />
-    <script src="myscripts.js"></script>
     <title>DIRECTORY | DANAO KIOKS</title>
   </head>
   <body>
@@ -17,7 +16,7 @@
       <nav>
         <a href="#home">HOME</a>
         <a href="#news">ABOUT</a>
-        <a class="active" href="#directory">DIRECTORY</a>
+        <a id="active" href="#directory">DIRECTORY</a>
       </nav>
     </header>
 
@@ -31,12 +30,12 @@
             const app = new Application(canvas);
             app.load("./scene.splinecode");
           </script> -->
-          <iframe
+          <!-- <iframe
             src="https://my.spline.design/untitled-4e135aa6ff0804835996bf348fdb72f9/"
             frameborder="0"
             width="100%"
             height="100%"
-          ></iframe>
+          ></iframe> -->
         </section>
 
         <section class="details">
@@ -57,24 +56,25 @@
         </section>
       </section>
 
-      <section class="menu">
-        <div class="admin locs" id="active"><p>Admin Office</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
-        <div class="locs" id="loc"><p>Hello</p></div>
+      <section class="menu" id="selector">
+        <div id="" class="admin locs active"><p>Admin</p></div>
+        <div class="locs"><p>hatdog</p></div>
+        <div id="" class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
+        <div class="locs"><p>Hello</p></div>
       </section>
+      <script src="script.js"></script>
     </main>
 
     <footer></footer>
