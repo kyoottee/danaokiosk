@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "GlacialBold";
+  src: url("fonts/GlacialIndifference-Bold.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Glacial";
+  src: url("fonts/GlacialIndifference-Regular.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GlacialItalic";
+  src: url("fonts/GlacialIndifference-Italic.woff2") format("woff2"),
+    url("fonts/GlacialIndifference-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZuumeSemiBold";
+  src: url("fonts/Zuume-SemiBold.woff2") format("woff2"),
+    url("fonts/Zuume-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(./Fonts/Poppins-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: dashed red 1px; */
+}
+body {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(./Images/ctu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/*----------HEADER---------*/
+header {
+  padding: 1rem 6% 0 6%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  font-family: GlacialBold;
+  width: 50%;
+}
+
+.logo-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 5px;
+}
+
+.logo-container img {
+  width: 70px;
+  cursor: pointer;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-family: Glacial;
+  font-size: 18px;
+}
+
+.nav__link:hover {
+  position: relative;
+}
+
+.nav__link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.15rem;
+  left: 0;
+  top: 1.4rem;
+  background-color: rgb(156, 151, 151);
+}
+
+.active {
+  position: relative;
+}
+
+.active:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.15rem;
+  left: 0;
+  top: 1.4rem;
+  background-color: #ffcc32;
+}
+
+.nav__toggle {
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.nav__toggle i {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  .details {
+    margin: 12.1rem 0 0 13%;
+  }
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: auto;
+    overflow-y: hidden;
+    z-index: 3;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    top: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 60%;
+    width: 40%;
+    background-color: #2c2b2b;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 155.5vh;
+    z-index: 4;
+  }
+  .nav__menu ul {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__menu li {
+    margin: 10px 0;
+  }
+
+  .nav__menu a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav__menu a .active {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav__toggle {
+    width: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .close-button {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 1.8rem;
+    padding: 0.6rem;
+    border-radius: 100%;
+    border: none;
+  }
+  .school {
+    position: relative;
+    z-index: 0;
+    margin-top: 2rem;
+  }
+  .details {
+    text-align: center;
+  }
+  .data-description {
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+  }
+  .details .school {
+    margin: 1rem 0 1rem 0;
+  }
+  .details span {
+    font-size: 3rem;
+    padding: 0;
+    line-height: 0px;
+  }
+  .but-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/*--------CONTENT----------*/
+.content {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  height: 80vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+  .building {
+    background-color: #2c2b2b;
+    height: 70vh;
+  }
+  .slider-wrapper {
+    z-index: 3;
+    overflow: scroll;
+    position: absolute;
+    height: 500px;
+    top: -100px;
+  }
+  .details {
+    height: 80vh;
+  }
+}
+.text h2 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 0.4rem 0rem 2rem 0rem;
+  font-weight: 100;
+  font-family: Glacial;
+  color: white;
+}
+.school {
+  font-size: 5.5rem;
+  color: #fff;
+  margin: 1rem 0;
+  line-height: 85px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.span {
+  font-family: ZuumeSemiBold;
+  letter-spacing: -1.5px;
+  font-size: 5.5rem;
+  vertical-align: baseline;
+  padding: 2px;
+  background: linear-gradient(
+    to right,
+    #fabe0b,
+    #f5c32f,
+    #f7ce54,
+    #f5c32f,
+    #fabe0b
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descrip_box {
+  font-size: 1rem;
+  font-family: Glacial;
+  color: white;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+.data-description {
+  margin-right: 25%;
+}
+.data-description svg {
+  vertical-align: text-bottom;
+  height: 20px;
+}
+.details button {
+  background: rgb(219, 209, 209);
+  border: 0;
+  border-radius: 25px;
+  color: rgb(44, 44, 43);
+  cursor: pointer;
+  font-family: GlacialBold, -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  line-height: 2.2;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-left: 0.1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.button-62 a {
+  text-decoration: none;
+  color: rgb(44, 44, 43);
+}
+
+.details button:not([disabled]):hover {
+  background-color: #ffcc32;
+}
+
+/*--------SLIDER-------*/
+.slider-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: calc(100% - 540px);
+}
+.wrapper {
+  width: 200px;
+  /* font-size: 1.2rem; */
+  /* font-weight: bold; */
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  height: 320px;
+  margin: 0 0 0rem 1rem;
+  position: relative;
+}
+.wrapper img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.wrapper p {
+  position: absolute;
+  color: rgb(219, 209, 209);
+  z-index: 3;
+  font-size: 1.2rem;
+  bottom: 20px;
+  left: 20px;
+  font-family: Glacial;
+  /* letter-spacing: -0.5px; */
+}
+.wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.building .explore {
+  position: absolute;
+  top: calc(100% - 640px);
+  color: white;
+  font-family: Glacial;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  margin-left: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+  border-radius: 15px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right,
+    #fabe0b,
+    #f5c32f,
+    #f7ce54,
+    #f5c32f,
+    #fabe0b
+  );
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}

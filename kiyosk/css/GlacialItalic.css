@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'GlacialItalic';
+	src: url(../fonts/GlacialIndifference-Italic.woff2) format('woff2'),
+	url(../fonts/GlacialIndifference-Italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
