@@ -1,318 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DIRECTORIES | CebuTech Danao</title>
-    <link rel="stylesheet" href="./dir.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./dir.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="./Images/ctulogo.png" />
-    <link rel="modulepreload" href="https://unpkg.com/@splinetool/runtime@0.9.321/build/runtime.js">
-</head>
-<body>
+    <link
+      rel="modulepreload"
+      href="https://unpkg.com/@splinetool/runtime@0.9.321/build/runtime.js"
+    />
+  </head>
+  <body>
     <!--HEADER-->
     <header>
-        <div class="logo-container"><a href="./index.html">
-            <img src="./Images/ctulogo.png">
-            </a>
-        </div>
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="./Images/ctulogo.png" />
+        </a>
+      </div>
 
-        <nav class="nav__menu" id="nav-menu">
-            <ul class="nav__list" id="nav-list">
-                <li class="nav__item"><a class="nav__link" href="./index.html">HOME</a></li>
-                <li class="nav__item"><a class="nav__link" href="./kiyosk/about.html">ABOUT</a></li>
-                <li class="nav__item"><a class="nav__link active" href="./dir.html">DIRECTORY</a></li>
-            </ul>
-            <button class="close-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-              </svg></button>
-        </nav>
+      <nav class="nav__menu" id="nav-menu">
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./kiyosk/about.html">ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link active" href="./dir.html">DIRECTORY</a>
+          </li>
+        </ul>
+        <button class="close-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+      </nav>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu' id="hamburger"></i>
-        </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu" id="hamburger"></i>
+      </div>
     </header>
 
     <section class="content">
-        <section class="building">
-          <div class="iframe-container">
-            <iframe src='https://my.spline.design/untitled-4e135aa6ff0804835996bf348fdb72f9/' 
-            frameborder='0' width='100%' height='100%'></iframe>
+      <section class="building">
+        <div class="iframe-container">
+          <iframe
+            src="https://my.spline.design/untitled-4e135aa6ff0804835996bf348fdb72f9/"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="search">
+          <input
+            type="text"
+            value=""
+            placeholder="SEARCH"
+            id="searchInput"
+            onnkeyup="search()"
+          />
+        </div>
+        <div class="text">
+          <h2>THIS IS</h2>
+          <h1 class="school"><span class="span"></span></h1>
+          <div class="datadesc">
+            <p class="data-description">
+              A premier, inclusive, globally- recognized research and
+              innovation, smart, community-responsive, and sustainable
+              technological university.
+            </p>
           </div>
-        </section>
+          <p>
+            <i class="data-location" style="color: #ffcc32"
+              >Sabang, Danao City, Cebu.</i
+            >
+          </p>
+          <div class="but-container">
+            <button class="button" id="button" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-up-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"
+                />
+              </svg>
+              Visit Chuchuuu
+            </button>
+          </div>
 
-        <section class="details">
-            <div class="search">
-              <input type="text" value="" placeholder="SEARCH" id="searchInput" onnkeyup="search()"/>
-            </div>
-            <div class="text">
-              <h2>THIS IS</h2>
-              <h1 class="school"><span class="span"></span></h1>
-              <div class="datadesc">
-                <p class="data-description">
-                A premier, inclusive, globally- recognized research and innovation, smart, community-responsive, and sustainable technological university.
-              </p></div>
-              <p><i class="data-location" style="color: #ffcc32">Sabang, Danao City, Cebu.</i></p>
-              <div class="but-container">
-                <button class="button" id="button" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
-                  </svg>Visit Chuchuuu</button>
-                </div>
-
-                <div id="mapModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img id="mapImage" src="./Images/OVAL.JPG" alt="Map Image">
-                </div>
-                
-            </div>
-        </section>
+          <div id="mapModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="mapImage" src="./Images/OVAL.JPG" alt="Map Image" />
+          </div>
+        </div>
+      </section>
     </section>
 
     <section class="slider">
-        <div class="slider-wrapper">
+      <div class="slider-wrapper">
         <div class="menu" id="menu">
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 2nd Floor, left side corner, Old Admin Building
-                      " data-title="ALUMNI AFFAIRS OFFICE" data-description="Promote interaction with and among alumni. Highlight the 
-                    achievements of successful alumni. Provide alumni with rewarding opportunities to serve the institution, the community, faculty, and
-                     student body.
-                    " onclick="changeBackground1('./Images/ALUMNI-AFFAIRS-OFFICE.JPG')">
-                    <img src="./Images/ALUMNI-AFFAIRS-OFFICE.JPG">
-                    <div class="overlay"></div>
-                    <p>ALUMNI<br>AFFAIRS OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: 2nd Floor, left side corner, Old Admin Building"
+            data-title="ALUMNI AFFAIRS OFFICE"
+            data-description="Promote interaction with and among alumni. Highlight the achievements of successful alumni. Provide alumni with rewarding opportunities to serve the institution, the community, faculty, and student body."
+            onclick="changeBackground1('./Images/ALUMNI-AFFAIRS-OFFICE.JPG')"
+          >
+            <img src="./Images/ALUMNI-AFFAIRS-OFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>ALUMNI<br />AFFAIRS OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\3floor.png" data-location="Location: 2nd Floor, left side corner, Old Admin Building
-                    " data-title="AUDIO VISUAL ROOM" data-description="The Audio Visual Rooms aim to provide a variety of learning approaches and 
-                    stimuli through the use of various AV materials and equipment. The resources of the center are varied to facilitate and insure effective 
-                    teaching-learning process at all times.
-                    " id="wrapper" onclick="changeBackground1('./Images/AVR.JPG')">
-                    <img src="./Images/AVR.JPG">
-                    <div class="overlay"></div>
-                    <p>AUDIO<br>VISUAL ROOM</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\3floor.png"
+            data-location="Location: 2nd Floor, left side corner, Old Admin Building"
+            data-title="AUDIO VISUAL ROOM"
+            data-description="The Audio Visual Rooms aim to provide a variety of learning approaches and stimuli through the use of various AV materials and equipment. The resources of the center are varied to facilitate and insure effective teaching-learning process at all times."
+            id="wrapper"
+            onclick="changeBackground1('./Images/AVR.JPG')"
+          >
+            <img src="./Images/AVR.JPG" />
+            <div class="overlay"></div>
+            <p>AUDIO<br />VISUAL ROOM</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor.png" data-location="Location: right side, Ground Floor, Admin Building
-                    " data-title="BAC OFFICE" data-description="Ensures that all purchases made by the Procuring Entity are duly 
-                    documented, and assume ownership of all associated files. Coordinate and keep an eye on procurement activities with end 
-                    users." onclick="changeBackground1('./Images/BAC Office.JPG')">
-                    <img src="./Images/BAC Office.JPG">
-                    <div class="overlay"></div>
-                     <p>BAC</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor.png"
+            data-location="Location: right side, Ground Floor, Admin Building"
+            data-title="BAC OFFICE"
+            data-description="Ensures that all purchases made by the Procuring Entity are duly documented, and assume ownership of all associated files. Coordinate and keep an eye on procurement activities with end users."
+            onclick="changeBackground1('./Images/BAC Office.JPG')"
+          >
+            <img src="./Images/BAC Office.JPG" />
+            <div class="overlay"></div>
+            <p>BAC</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: behind Electric Shop" data-title="CTU - DANAO SHOP" data-description="This provides students with a dedicated area where they can learn and practice the art and skills of welding. This specialized workshop serves as a hands-on learning environment for students interested in pursuing careers in welding and related industries. 
-                    " onclick="changeBackground1('./Images/BENTOYSHOP.JPG')">
-                    <img src="./Images/BENTOYSHOP.JPG">
-                    <div class="overlay"></div>
-                    <p>CTU - DANAO SHOP</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: behind Electric Shop"
+            data-title="CTU - DANAO SHOP"
+            data-description="This provides students with a dedicated area where they can learn and practice the art and skills of welding. This specialized workshop serves as a hands-on learning environment for students interested in pursuing careers in welding and related industries."
+            onclick="changeBackground1('./Images/BENTOYSHOP.JPG')"
+          >
+            <img src="./Images/BENTOYSHOP.JPG" />
+            <div class="overlay"></div>
+            <p>CTU - DANAO SHOP</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor.png" data-location="Location: right side glass window, Ground Floor, Admin Building
-                    " data-title="CASHIER'S OFFICE" data-description=" Accurately process, record and deposit all cash receipts.
-                    Process and record all student and non-student account receivable payments." onclick="changeBackground1('./Images/Cashier.JPG')">
-                    <img src="./Images/Cashier.JPG">
-                    <div class="overlay"></div>
-                    <p>CASHIER'S OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor.png"
+            data-location="Location: right side glass window, Ground Floor, Admin Building"
+            data-title="CASHIER'S OFFICE"
+            data-description=" Accurately process, record and deposit all cash receipts.Process and record all student and non-student account receivable payments."
+            onclick="changeBackground1('./Images/Cashier.JPG')"
+          >
+            <img src="./Images/Cashier.JPG" />
+            <div class="overlay"></div>
+            <p>CASHIER'S OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor.png" data-location="Location: right side corner, Ground floor, Admin Building
-                    " data-title="CLINIC" data-description="Promotes, develops and maintains the physical and mental health of the school
-                     population." onclick="changeBackground1('./Images/Clinic.JPG')">
-                        <img src="./Images/Clinic.JPG">
-                        <div class="overlay"></div>
-                        <p>CLINIC</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor.png"
+            data-location="Location: right side corner, Ground floor, Admin Building"
+            data-title="CLINIC"
+            data-description="Promotes, develops and maintains the physical and mental health of the school population."
+            onclick="changeBackground1('./Images/Clinic.JPG')"
+          >
+            <img src="./Images/Clinic.JPG" />
+            <div class="overlay"></div>
+            <p>CLINIC</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: left corner room, beside SAC Building (right side) 
-                    " data-title="CULTURE ARTS OFFICE" data-description="Tasked with providing opportunities for students to develop themselves in culture 
-                    promotion and arts.
-                    " onclick="changeBackground1('./Images/CULTUREARTSOFFICE.JPG')">
-                        <img src="./Images/CULTUREARTSOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>CULTURE<br>ARTS OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: left corner room, beside SAC Building (right side)"
+            data-title="CULTURE ARTS OFFICE"
+            data-description="Tasked with providing opportunities for students to develop themselves in culture promotion and arts."
+            onclick="changeBackground1('./Images/CULTUREARTSOFFICE.JPG')"
+          >
+            <img src="./Images/CULTUREARTSOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>CULTURE<br />ARTS OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: behind Office of Culture and Arts
-                    " data-title="ELECTRICAL SHOP" data-description="This dedicated space allows for hands-on learning, vocational training, and practical 
-                    application of electrical principles. 
-                    " onclick="changeBackground1('./Images/ELECTRICALSHOP.JPG')">
-                        <img src="./Images/ELECTRICALSHOP.JPG">
-                        <div class="overlay"></div>
-                        <p>ELECTRICAL<br>SHOP</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: behind Office of Culture and Arts"
+            data-title="ELECTRICAL SHOP"
+            data-description="This dedicated space allows for hands-on learning, vocational training, and practical application of electrical principles."
+            onclick="changeBackground1('./Images/ELECTRICALSHOP.JPG')"
+          >
+            <img src="./Images/ELECTRICALSHOP.JPG" />
+            <div class="overlay"></div>
+            <p>ELECTRICAL<br />SHOP</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: across CME building (blue glass wall)
-                    " data-title="FABLAB" data-description="Provide support to parents and educators in the areas of Special Education and the Multi-Tiered System of Supports (MTSS).
-                    " onclick="changeBackground1('./Images/FABLAB.JPG')">
-                        <img src="./Images/FABLAB.JPG">
-                        <div class="overlay"></div>
-                        <p>FABLAB</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: across CME building (blue glass wall)"
+            data-title="FABLAB"
+            data-description="Provide support to parents and educators in the areas of Special Education and the Multi-Tiered System of Supports (MTSS)."
+            onclick="changeBackground1('./Images/FABLAB.JPG')"
+          >
+            <img src="./Images/FABLAB.JPG" />
+            <div class="overlay"></div>
+            <p>FABLAB</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: area 
-                    " data-title="FACILITY CENTRUM" data-description="Provides a suitable space for hosting a wide range of events like weddings, conferences, and gatherings which can significantly contribute to the success and overall experience of the occasion.
-                    " onclick="changeBackground1('./Images/Centrum.JPG')">
-                    <img src="./Images/Centrum.JPG">
-                    <div class="overlay"></div>
-                    <p>FACILITY<br>CENTRUM</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: area"
+            data-title="FACILITY CENTRUM"
+            data-description="Provides a suitable space for hosting a wide range of events like weddings, conferences, and gatherings which can significantly contribute to the success and overall experience of the occasion."
+            onclick="changeBackground1('./Images/Centrum.JPG')"
+          >
+            <img src="./Images/Centrum.JPG" />
+            <div class="overlay"></div>
+            <p>FACILITY<br />CENTRUM</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 2nd Floor, left side, Old Admin Building
-                    " data-title="GAD OFFICE" data-description="Development perspective and process that is participatory and empowering, equitable, sustainable, free form violence, respectful of human rights, supportive of self-determination and actualization of human potentials." onclick="changeBackground1('./Images/GADOFFICE.JPG')">
-                        <img src="./Images/GADOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>GAD OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: 2nd Floor, left side, Old Admin Building"
+            data-title="GAD OFFICE"
+            data-description="Development perspective and process that is participatory and empowering, equitable, sustainable, free form violence, respectful of human rights, supportive of self-determination and actualization of human potentials."
+            onclick="changeBackground1('./Images/GADOFFICE.JPG')"
+          >
+            <img src="./Images/GADOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>GAD OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: near Oval
-                    " data-title="KADASIG GYM" data-description="Serves as a versatile space that offers numerous benefits for physical education, sports activities, and overall student well-being.  Here, students can take classes in PE, join sports competition, recreation, and special events.
-                    " onclick="changeBackground1('./Images/Kadasig GYM.JPG')">
-                        <img src="./Images/Kadasig GYM.JPG">
-                        <div class="overlay"></div>
-                        <p>KADASIG GYM</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: near Oval"
+            data-title="KADASIG GYM"
+            data-description="Serves as a versatile space that offers numerous benefits for physical education, sports activities, and overall student well-being.  Here, students can take classes in PE, join sports competition, recreation, and special events."
+            onclick="changeBackground1('./Images/Kadasig GYM.JPG')"
+          >
+            <img src="./Images/Kadasig GYM.JPG" />
+            <div class="overlay"></div>
+            <p>KADASIG GYM</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\3floor.png" data-location="Location: 3rd floor, center of the Admin Building
-                    " data-title="LIBRARY" data-description="A vital educational resource that promotes reading satisfaction, assists academic growth, and offers a calm environment for study and research.
-                    " onclick="changeBackground1('./Images/Library.JPG')">
-                        <img src="./Images/Library.JPG">
-                        <div class="overlay"></div>
-                        <p>LIBRARY</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\3floor.png"
+            data-location="Location: 3rd floor, center of the Admin Building"
+            data-title="LIBRARY"
+            data-description="A vital educational resource that promotes reading satisfaction, assists academic growth, and offers a calm environment for study and research.
+                    "
+            onclick="changeBackground1('./Images/Library.JPG')"
+          >
+            <img src="./Images/Library.JPG" />
+            <div class="overlay"></div>
+            <p>LIBRARY</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: left side corner of the FABLAB Building, beside Solid Waste & Sanitation
-                    " data-title="MAINTENANCE OFFICE" data-description="Provide guidance to school personnel in preparing a detailed list of areas, 
-                    spaces, materials, furniture, and equipment to be maintained as well as a list of defects to be corrected" onclick="changeBackground1('./Images/MAINTENANCE.JPG')">
-                        <img src="./Images/MAINTENANCE.JPG">
-                        <div class="overlay"></div>
-                        <p>MAINTENANCE<br>OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: left side corner of the FABLAB Building, beside Solid Waste & Sanitation"
+            data-title="MAINTENANCE OFFICE"
+            data-description="Provide guidance to school personnel in preparing a detailed list of areas, spaces, materials, furniture, and equipment to be maintained as well as a list of defects to be corrected"
+            onclick="changeBackground1('./Images/MAINTENANCE.JPG')"
+          >
+            <img src="./Images/MAINTENANCE.JPG" />
+            <div class="overlay"></div>
+            <p>MAINTENANCE<br />OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor" data-location="Location: left side, Ground Floor, Admin Building
-                    " data-title="MIS OFFICE" data-description="Provide quality, relevant, and timely information that can be used for planning and budgeting, 
-                    results monitoring and evaluation, and for policy decisions across governance levels." onclick="changeBackground1('./Images/MISOFFICE.JPG')">
-                        <img src="./Images/MISOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>MIS OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor"
+            data-location="Location: left side, Ground Floor, Admin Building"
+            data-title="MIS OFFICE"
+            data-description="Provide quality, relevant, and timely information that can be used for planning and budgeting, results monitoring and evaluation, and for policy decisions across governance levels."
+            onclick="changeBackground1('./Images/MISOFFICE.JPG')"
+          >
+            <img src="./Images/MISOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>MIS OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: across the edge of the admin area 
-                    " data-title="OLD CANTEEN" data-description="Designated area where staff members, teachers, and students can buy and eat food and drinks. It offers a convenient location for meals and snacks on the school grounds that are also social.
-                    " onclick="changeBackground1('./Images/OLDCANTEEN.JPG')">
-                        <img src="./Images/OLDCANTEEN.JPG">
-                        <div class="overlay"></div>
-                        <p>OLD CANTEEN</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: across the edge of the admin area"
+            data-title="OLD CANTEEN"
+            data-description="Designated area where staff members, teachers, and students can buy and eat food and drinks. It offers a convenient location for meals and snacks on the school grounds that are also social."
+            onclick="changeBackground1('./Images/OLDCANTEEN.JPG')"
+          >
+            <img src="./Images/OLDCANTEEN.JPG" />
+            <div class="overlay"></div>
+            <p>OLD CANTEEN</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\oval.png" data-location="Location: open area at the end of the school
-                    " data-title="OVAL" data-description="The oval is an expansive outdoor space that offers a large, open area for students to engage in various 
-                    sports such as soccer, cricket, rugby, and physical education.
-                    " onclick="changeBackground1('./Images/OVAL.JPG')">
-                        <img src="./Images/OVAL.JPG">
-                        <div class="overlay"></div>
-                        <p>OVAL</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\oval.png"
+            data-location="Location: open area at the end of the school"
+            data-title="OVAL"
+            data-description="The oval is an expansive outdoor space that offers a large, open area for students to engage in various sports such as soccer, cricket, rugby, and physical education."
+            onclick="changeBackground1('./Images/OVAL.JPG')"
+          >
+            <img src="./Images/OVAL.JPG" />
+            <div class="overlay"></div>
+            <p>OVAL</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 
-                    " data-title="PINKROOM" data-description="Provides a safe and supportive space for students who may need a calm and peaceful environment. 
-                    The color pink is often associated with feelings of tranquility and relaxation, making it an ideal choice for creating a soothing atmosphere.
-                    " onclick="changeBackground1('./Images/PINKROOM.JPG')">
-                        <img src="./Images/PINKROOM.JPG">
-                        <div class="overlay"></div>
-                        <p>PINKROOM</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: "
+            data-title="PINKROOM"
+            data-description="Provides a safe and supportive space for students who may need a calm and peaceful environment. The color pink is often associated with feelings of tranquility and relaxation, making it an ideal choice for creating a soothing atmosphere."
+            onclick="changeBackground1('./Images/PINKROOM.JPG')"
+          >
+            <img src="./Images/PINKROOM.JPG" />
+            <div class="overlay"></div>
+            <p>PINKROOM</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 2nd Floor, right side, Old Admin Building
-                    " data-title="QUALITY ASSURANCE OFFICE" data-description="Provide the needed guidance and support to schools for 
-                    consistent improvement in learning outcomes.
-                    " onclick="changeBackground1('./Images/QAOFFICE.JPG')">
-                        <img src="./Images/QAOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>QUALITY<br>ASSURANCE OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: 2nd Floor, right side, Old Admin Building"
+            data-title="QUALITY ASSURANCE OFFICE"
+            data-description="Provide the needed guidance and support to schools for consistent improvement in learning outcomes."
+            onclick="changeBackground1('./Images/QAOFFICE.JPG')"
+          >
+            <img src="./Images/QAOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>QUALITY<br />ASSURANCE OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor.png" data-location="Location: 
-                    " data-title="QUADRANGLE" data-description="This is chuchuness" onclick="changeBackground1('./Images/QUADRANGLE.JPG')">
-                        <img src="./Images/QUADRANGLE.JPG">
-                        <div class="overlay"></div>
-                        <p>QUADRANGLE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor.png"
+            data-location="Location: "
+            data-title="QUADRANGLE"
+            data-description="This is chuchuness"
+            onclick="changeBackground1('./Images/QUADRANGLE.JPG')"
+          >
+            <img src="./Images/QUADRANGLE.JPG" />
+            <div class="overlay"></div>
+            <p>QUADRANGLE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\1floor.png" data-location="Location: Left side glass window, Ground Floor, Admin Building
-                    " data-title="REGISTRAR" data-description="Manages student records and course information, which may include assisting 
-                    students with class scheduling and registration.
-                    " onclick="changeBackground1('./Images/Registrar.JPG')">
-                        <img src="./Images/Registrar.JPG">
-                        <div class="overlay"></div>
-                        <p>REGISTRAR</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\1floor.png"
+            data-location="Location: Left side glass window, Ground Floor, Admin Building"
+            data-title="REGISTRAR"
+            data-description="Manages student records and course information, which may include assisting students with class scheduling and registration."
+            onclick="changeBackground1('./Images/Registrar.JPG')"
+          >
+            <img src="./Images/Registrar.JPG" />
+            <div class="overlay"></div>
+            <p>REGISTRAR</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: left side corner of the FABLAB Building
-                    " data-title="SANITATION OFFICE" data-description="Ensure solid waste is managed in such a way that protects both public health and the environment. Reducing the amount of solid wastes generated remains the program's primary goal.
-                    " onclick="changeBackground1('./Images/SANITATIONOFFICE.JPG')">
-                        <img src="./Images/SANITATIONOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>SANITATION OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: left side corner of the FABLAB Building"
+            data-title="SANITATION OFFICE"
+            data-description="Ensure solid waste is managed in such a way that protects both public health and the environment. Reducing the amount of solid wastes generated remains the program's primary goal."
+            onclick="changeBackground1('./Images/SANITATIONOFFICE.JPG')"
+          >
+            <img src="./Images/SANITATIONOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>SANITATION OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\2floor.png" data-location="Location: 2nd Floor, left side corner, Admin Building
-                    " data-title="SAO AND SCHOLARSHIP OFFICE" data-description="Takes charge of the campus life of the students, their welfare and discipline, 
-                    and dormitory facilities. 
-                    Also, keeps an up-to-date list of scholars and grantees and regularly checks on their academic performance to ensure that assistance is given to appropriate recipients.
-                    " onclick="changeBackground1('./Images/SAO & Scholarship Office.JPG')">
-                        <img src="./Images/SAO & Scholarship Office.JPG">
-                        <div class="overlay"></div>
-                        <p>SAO AND SCHOLARSHIP<br>OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\2floor.png"
+            data-location="Location: 2nd Floor, left side corner, Admin Building"
+            data-title="SAO AND SCHOLARSHIP OFFICE"
+            data-description="Takes charge of the campus life of the students, their welfare and discipline, and dormitory facilities. Also, keeps an up-to-date list of scholars and grantees and regularly checks on their academic performance to ensure that assistance is given to appropriate recipients."
+            onclick="changeBackground1('./Images/SAO & Scholarship Office.JPG')"
+          >
+            <img src="./Images/SAO & Scholarship Office.JPG" />
+            <div class="overlay"></div>
+            <p>SAO AND SCHOLARSHIP<br />OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: Ground Floor, Old Admin Building
-                    " data-title="SUPPLY OFFICE" data-description="Serves as a central location for organizing and distributing the numerous supplies required for the successful operation of the school. It is essential for making sure that students, faculty, and staff have access to the required supplies and resources.
-                    " onclick="changeBackground1('./Images/SUPPLYOFFICE.JPG')">
-                        <img src="./Images/SUPPLYOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>SUPPLY OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: Ground Floor, Old Admin Building"
+            data-title="SUPPLY OFFICE"
+            data-description="Serves as a central location for organizing and distributing the numerous supplies required for the successful operation of the school. It is essential for making sure that students, faculty, and staff have access to the required supplies and resources."
+            onclick="changeBackground1('./Images/SUPPLYOFFICE.JPG')"
+          >
+            <img src="./Images/SUPPLYOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>SUPPLY OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: right next to the Sewing Room, across the SAC
-                    " data-title="DRESSMAKING ROOM" data-description="A specialized space equipped with sewing machines, tools, and materials for students to learn and practice sewing skills. It serves as a dedicated area for textile-related activities and offers several benefits for students.
-                    " onclick="changeBackground1('./Images/TAHIANAN.JPG')">
-                        <img src="./Images/TAHIANAN.JPG">
-                        <div class="overlay"></div>
-                        <p>DRESSMAKING ROOM</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: right next to the Sewing Room, across the SAC"
+            data-title="DRESSMAKING ROOM"
+            data-description="A specialized space equipped with sewing machines, tools, and materials for students to learn and practice sewing skills. It serves as a dedicated area for textile-related activities and offers several benefits for students."
+            onclick="changeBackground1('./Images/TAHIANAN.JPG')"
+          >
+            <img src="./Images/TAHIANAN.JPG" />
+            <div class="overlay"></div>
+            <p>DRESSMAKING ROOM</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 
-                    " data-title="TECHNOGADGET OFFICE" data-description="Serves as a learning environment for both students and faculty members. This particular area serves as a hub for providing comprehensive technological support and expertise. 
-                    " onclick="changeBackground1('./Images/TECHNOGADGETOFFICE.JPG')">
-                        <img src="./Images/TECHNOGADGETOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>TECHNOGADGET<br>OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: "
+            data-title="TECHNOGADGET OFFICE"
+            data-description="Serves as a learning environment for both students and faculty members. This particular area serves as a hub for providing comprehensive technological support and expertise. "
+            onclick="changeBackground1('./Images/TECHNOGADGETOFFICE.JPG')"
+          >
+            <img src="./Images/TECHNOGADGETOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>TECHNOGADGET<br />OFFICE</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\tennis.png" data-location="Location: beside Gymnasium
-                    " data-title="TENNIS COURT" data-description="Provides a dedicated space for students to engage in tennis-related activities. It offers several benefits for physical fitness, skill development, and recreational opportunities.
-                    " onclick="changeBackground1('./Images/Tennis Court.JPG')">
-                        <img src="./Images/Tennis Court.JPG">
-                        <div class="overlay"></div>
-                        <p>TENNIS COURT</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\tennis.png"
+            data-location="Location: beside Gymnasium"
+            data-title="TENNIS COURT"
+            data-description="Provides a dedicated space for students to engage in tennis-related activities. It offers several benefits for physical fitness, skill development, and recreational opportunities."
+            onclick="changeBackground1('./Images/Tennis Court.JPG')"
+          >
+            <img src="./Images/Tennis Court.JPG" />
+            <div class="overlay"></div>
+            <p>TENNIS COURT</p>
+          </div>
 
-                    <div class="wrapper" data-image="\dir\kadasig.png" data-location="Location: 2nd Floor,  Left side – Stairs, COT Building
-                    " data-title="TESDA OFFICE" data-description="Is a dedicated space for delivering technical and vocational education and training 
-                    (TVET) programs aligned with TESDA's curriculum and standards. It provides direction, policies, programs and standards towards quality technical education and skill development.
-                    " onclick="changeBackground1('./Images/TESDAOFFICE.JPG')">
-                        <img src="./Images/TESDAOFFICE.JPG">
-                        <div class="overlay"></div>
-                        <p>TESDA OFFICE</p>
-                    </div>
+          <div
+            class="wrapper"
+            data-image="\dir\kadasig.png"
+            data-location="Location: 2nd Floor,  Left side – Stairs, COT Building"
+            data-title="TESDA OFFICE"
+            data-description="Is a dedicated space for delivering technical and vocational education and training (TVET) programs aligned with TESDA's curriculum and standards. It provides direction, policies, programs and standards towards quality technical education and skill development."
+            onclick="changeBackground1('./Images/TESDAOFFICE.JPG')"
+          >
+            <img src="./Images/TESDAOFFICE.JPG" />
+            <div class="overlay"></div>
+            <p>TESDA OFFICE</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
-    
-</body>
+  </body>
 </html>
