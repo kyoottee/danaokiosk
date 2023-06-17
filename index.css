@@ -47,7 +47,7 @@
 body {
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.9)
     ),
     url(./Images/ctu.jpg);
@@ -367,17 +367,17 @@ nav a {
 .slider-wrapper {
   position: relative;
   z-index: 3;
+  scroll-behavior: smooth;
 }
 .menu {
   display: flex;
   align-items: center;
   position: absolute;
   top: calc(100% - 540px);
+  scroll-behavior: smooth;
 }
 .wrapper {
   width: 200px;
-  /* font-size: 1.2rem; */
-  /* font-weight: bold; */
   color: #ffffff;
   transition: transform 0.3s ease;
   height: 320px;
@@ -400,7 +400,6 @@ nav a {
   bottom: 20px;
   left: 20px;
   font-family: Glacial;
-  /* letter-spacing: -0.5px; */
 }
 .wrapper:hover {
   transform: scale(1.05);
@@ -408,7 +407,7 @@ nav a {
 }
 .building .explore {
   position: absolute;
-  top: calc(100% - 640px);
+  top: calc(100% - 600px);
   color: white;
   font-family: Glacial;
   font-size: 1.5rem;
@@ -430,23 +429,35 @@ nav a {
   border-radius: 15px;
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  display: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    to right,
-    #fabe0b,
-    #f5c32f,
-    #f7ce54,
-    #f5c32f,
-    #fabe0b
-  );
-  border-radius: 5px;
+.animate__animated .animate__fadeInLeft{
+  animation-duration: 2s;
 }
 
-::-webkit-scrollbar-track {
+/* ... existing code ... */
+.slider-button {
+  position: fixed;
+  top: 52%;
+  transform: translateY(-50%);
   background-color: transparent;
-  border-radius: 5px;
+  border: none;
+  font-size: 100px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+  z-index: 999;
+}
+
+.slider-button:hover {
+  color: #ffcc32;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
