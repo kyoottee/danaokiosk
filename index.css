@@ -166,7 +166,7 @@ nav a {
     align-items: center;
     height: auto;
     position: absolute;
-    top: 500px;
+    margin-top: 16.9rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -373,7 +373,6 @@ nav a {
   display: flex;
   align-items: center;
   position: absolute;
-  top: calc(100% - 540px);
   scroll-behavior: smooth;
 }
 .wrapper {
@@ -390,7 +389,6 @@ nav a {
   height: 100%;
   width: 100%;
   z-index: 1;
-  position: relative;
 }
 .wrapper p {
   position: absolute;
@@ -407,7 +405,7 @@ nav a {
 }
 .building .explore {
   position: absolute;
-  top: calc(100% - 600px);
+  margin-top: 13rem;
   color: white;
   font-family: Glacial;
   font-size: 1.5rem;
@@ -432,15 +430,14 @@ nav a {
   display: none;
 }
 
-.animate__animated .animate__fadeInLeft{
+.animate__animated .animate__fadeInLeft {
   animation-duration: 2s;
 }
 
-/* ... existing code ... */
+/*--------*/
 .slider-button {
-  position: fixed;
-  top: 52%;
-  transform: translateY(-50%);
+  position: absolute;
+  margin-top: 23rem;
   background-color: transparent;
   border: none;
   font-size: 100px;
