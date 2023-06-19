@@ -215,13 +215,11 @@ nav a {
   border: transparent;
   outline: transparent;
 }
-.building img{
+.building img {
   position: absolute;
-  bottom: 10%;
-  height: 80%;
-  width: 80%;
+  margin: -3rem 5rem 0 0;
+  height: 42rem;
 }
-
 
 /* ------DETAILS------- */
 input {
@@ -378,11 +376,11 @@ input:focus {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 8px;
+  bottom: 16px;
   color: white;
   z-index: 3;
-  font-family: Glacial;
-  letter-spacing: 2px;
+  font-family: GlacialBold;
+  /* letter-spacing: 2px; */
   font-size: 1rem;
 }
 
@@ -407,7 +405,6 @@ input:focus {
   opacity: 1;
   border-radius: 10px;
 }
-
 
 .modal {
   display: none;
@@ -462,6 +459,6 @@ input:focus {
   right: 10px;
 }
 
-.animate__animated .animate__fadeInLeft{
+.animate__animated .animate__fadeInLeft {
   animation-duration: 2s;
 }
